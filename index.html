@@ -38,32 +38,36 @@
         .mypost {
             max-width: 500px;
             width: 95%;
-
             margin: 20px auto 0px auto;
 
             box-shadow: 0px 0px 3px 0px gray;
-
             padding: 20px;
         }
 
-        .mybtm {
-            margin-top: 10px;
+        .mypost > button {
+            margin-top: 15px;
         }
 
         .card {
             margin-top: 10px;
+
+            max-width: 900px;
+            width: 100%;
         }
 
-        .wrap {
+        .mycards {
             max-width: 1000px;
             width: 95%;
-
             margin: 20px auto 0px auto;
 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        .mycards > .card {
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -82,11 +86,9 @@
                 style="height: 100px"></textarea>
         <label for="floatingTextarea2">인상 깊었던 명대사 남기기</label>
     </div>
-    <div class="mybtm">
-        <button type="button" class="btn btn-dark">입력하기</button>
-    </div>
+    <button type="button" class="btn btn-dark">입력하기</button>
 </div>
-<div class="wrap">
+<div class="mycards">
     <div class="card">
         <div class="card-body">
             <blockquote class="blockquote mb-0">
